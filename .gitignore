@@ -1,0 +1,91 @@
+############################################################
+# 🧠 WordPress Core (ignorar si no versionás el núcleo)
+############################################################
+wp-admin/
+wp-includes/
+
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+
+############################################################
+# 🔐 Archivos sensibles y de configuración
+############################################################
+wp-config.php
+.htaccess
+web.config
+.env
+.env.local
+.env.*.local
+
+############################################################
+# 📦 Dependencias externas (Composer / Node)
+############################################################
+vendor/
+node_modules/
+package-lock.json
+yarn.lock
+
+############################################################
+# 🧹 Cachés, backups y archivos temporales
+############################################################
+cache/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/uploads/
+*.log
+*.tmp
+*.bak
+*.orig
+*.save
+*.swp
+*.swo
+
+############################################################
+# 🧩 Plugins y temas (ignorar solo los temas por defecto)
+############################################################
+wp-content/plugins/
+
+# Ignorar temas por defecto de WordPress
+wp-content/themes/twentytwenty/
+wp-content/themes/twentytwentyone/
+wp-content/themes/twentytwentytwo/
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfour/
+
+############################################################
+# 🖥️ Archivos de sistema operativo
+############################################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+############################################################
+# 🛠️ Archivos de IDEs y editores
+############################################################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+############################################################
+# 🗃️ Archivos de base de datos y exportaciones
+############################################################
+*.sql
+*.tar.gz
+*.zip
+*.gz
+*.7z
+*.rar
+
+############################################################
+# 🧪 Otros archivos ignorables
+############################################################
+*.iml
+*.db
+*.pid
+*.seed
+*.coverage
+*.code-workspace
