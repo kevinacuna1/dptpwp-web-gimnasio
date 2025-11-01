@@ -7,6 +7,21 @@
     <title><?php bloginfo('name'); ?></title>
 </head>
 
+<header class="header">
+    <div class="contenedor barra-navegacion">
+        <div class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logotipo Gym Fitness">
+        </div>
+
+        <!-- Navegacion -->
+        <nav>
+            <a href="/nosotros">Nosotros</a>
+            <a href="/contacto">Contacto</a>
+            <a href="/blog">Blog</a>
+        </nav>
+    </div>
+</header>
+
 <body>
     <main>
         <?php
