@@ -10,15 +10,18 @@
 <header class="header">
     <div class="contenedor barra-navegacion">
         <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logotipo Gym Fitness">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo Gym Fitness">
         </div>
 
         <!-- Navegacion -->
-        <nav>
-            <a href="/nosotros">Nosotros</a>
-            <a href="/contacto">Contacto</a>
-            <a href="/blog">Blog</a>
-        </nav>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'menu-principal',
+            'container' => 'nav',
+            'container_class' => '',
+            'menu_class' => '',
+        ));
+        ?>
     </div>
 </header>
 
@@ -26,10 +29,8 @@
     <main>
         <?php
         while (have_posts()) : the_post();
-
             the_title();
             the_content();
-
         endwhile;
         ?>
     </main>
