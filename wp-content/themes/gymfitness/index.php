@@ -19,8 +19,8 @@
         wp_nav_menu(array(
             'theme_location' => 'menu-principal',
             'container' => 'nav',
-            'container_class' => '',
-            'menu_class' => '',
+            'container_class' => 'menu-principal',
+            'menu_class' => 'menu',
         ));
         ?>
     </div>
