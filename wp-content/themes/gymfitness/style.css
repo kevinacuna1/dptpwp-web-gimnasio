@@ -15,10 +15,102 @@
 
 /** Custom Properties */
 :root {
+    /** Fuentes */
     --fuente-principal: 'Raleway', sans-serif;
     --fuente-heading: 'Staatliches', sans-serif;
+
+    /** Colores */
+    --primario: #ff5b00;
+    --gris-oscuro: #2f2e2e;
+    --gris-claro: #EBEBEB;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
     font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+/** Headings */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuente-heading);
+    margin: 0 0 5rem 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+/** Globales */
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+/** Utilidades */
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--primario);
+}
+
+.texto-blanco {
+    color: var(--blanco);
+}
+
+.seccion {
+    padding: 5rem 0;
 }
