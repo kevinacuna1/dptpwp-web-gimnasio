@@ -8,18 +8,7 @@
 <body>
     <main class="contenedor seccion contenido-centrado">
         <?php
-        while (have_posts()) : the_post();
-            // Mostrar título y contenido de la página
-            the_title('<h1 class="text-center text-primary">', '</h1>');
-
-            // Mostrar imagen destacada si existe
-            if (has_post_thumbnail()) {
-                the_post_thumbnail('full', array('class' => 'imagen-destacada'));
-            }
-
-            // Mostrar contenido de la página
-            the_content();
-        endwhile;
+            get_template_part('template_parts/pagina');
         ?>
     </main>
 </body>
