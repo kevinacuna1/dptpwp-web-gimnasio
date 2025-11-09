@@ -3,6 +3,7 @@
 function gymfitness_setup() {
     // Soporte para imágenes destacadas
     add_theme_support('post-thumbnails');
+    
     // Soporte para títulos dinámicos
     add_theme_support('title-tag');
 }
