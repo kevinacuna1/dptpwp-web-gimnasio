@@ -11,6 +11,8 @@
                 'menu_class' => 'menu',
             ));
             ?>
+
+            <p class="copyright">Todos los derechos reservados. <?php echo get_bloginfo('name') . ' ' . date('Y'); ?> </p>
         </div>
     </footer>
 
