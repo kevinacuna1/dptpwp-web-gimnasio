@@ -1,36 +1,12 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo('name'); ?></title>
-    <?php wp_head(); ?>
-</head>
-
-<header class="header">
-    <div class="contenedor barra-navegacion">
-        <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo Gym Fitness">
-        </div>
-
-        <!-- Navegacion -->
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'menu-principal',
-            'container' => 'nav',
-            'container_class' => 'menu-principal',
-            'menu_class' => 'menu',
-        ));
-        ?>
-    </div>
-</header>
+<?php 
+    get_header(); 
+?>
 
 <body>
-    <main>
+    <main class="contenedor seccion">
         <?php
         while (have_posts()) : the_post();
-            the_title();
+            the_title('<h1 class="text-center text-primary">', '</h1>');
             the_content();
         endwhile;
         ?>
