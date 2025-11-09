@@ -8,6 +8,7 @@
             get_template_part('template_parts/pagina');
         ?>
     </main>
-</body>
 
-</html>
+<?php 
+    get_footer();
+?>
