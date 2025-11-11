@@ -46,7 +46,7 @@ wp-content/uploads/
 ############################################################
 # 🧩 Plugins y temas (ignorar solo los temas por defecto)
 ############################################################
-wp-content/plugins/
+# wp-content/plugins/
 
 # Ignorar temas por defecto de WordPress
 wp-content/themes/twentytwenty/
